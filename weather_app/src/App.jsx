@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import defaultWeatherData from './api_response_default.json';
 
 const options = {
   method: 'GET',
@@ -21,16 +22,23 @@ function App() {
       })
       .catch(function (error) {
         setError(error);
+        setWeatherData(defaultWeatherData);
         setLoading(false);
       });
   }, []);
 
   if (loading) return <h1>Loading...</h1>;
-  if (error) return <h1>Error: {error}</h1>;
 
   return (
     <div>
-      <h1>Weather Data</h1>
+      {error ? (
+        <div>
+          <h1>Error: {error.message}</h1>
+          <h2>Showing default weather data:</h2>
+        </div>
+      ) : (
+        <h1>Weather Data</h1>
+      )}
       <pre>{JSON.stringify(weatherData, null, 2)}</pre>
     </div>
   );
