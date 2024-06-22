@@ -25,4 +25,5 @@ function GetLocation({ onLocationFound }) { // onLocationFound prop used to pass
   return <div>Fetching your location...</div>;
 }
 
+
 export default GetLocation;
