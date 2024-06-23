@@ -32,7 +32,7 @@ function SideBar({temprature}) {
           </div>
 
           <div className="flex flex-col items-center justify-between flex-grow pt-6">
-            <h1 className="text-gray-150 text-[144px] font-medium">
+            <h1 className="text-gray-150 text-[100px] font-medium">
               {temprature}<span className="text-5xl text-gray-250">&deg;C</span>
             </h1>
             <h3 className="font-semibold text-4xl text-gray-250">Shower</h3>

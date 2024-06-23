@@ -1,7 +1,7 @@
 import LargeCard from "./LargeCard";
 import SmallCard from "./SmallCard";
 
-function MainContent({windSpeed,windDirection,humidity,pressure,visibility}) {
+function MainContent({forcastDataList,windSpeed,windDirection,humidity,pressure,visibility}) {
   return (
     <div className="text-gray-150 p-10 flex-grow">
       <div className="space-x-3 text-right">
@@ -17,15 +17,36 @@ function MainContent({windSpeed,windDirection,humidity,pressure,visibility}) {
         <SmallCard
           dayTitle="Tomorrow"
           img="Shower"
-          max={20}
-          min={12}
+          max={forcastDataList[0]}
+          min={forcastDataList[1]}
           temp="C"
         />
         <SmallCard
           dayTitle="Sun, 7 Jun"
           img="Clear"
-          max={27}
-          min={18}
+          max={forcastDataList[2]}
+          min={forcastDataList[3]}
+          temp="C"
+        />
+        <SmallCard
+          dayTitle="Sun, 7 Jun"
+          img="Clear"
+          max={forcastDataList[4]}
+          min={forcastDataList[5]}
+          temp="C"
+        />
+        <SmallCard
+          dayTitle="Sun, 7 Jun"
+          img="Clear"
+          max={forcastDataList[6]}
+          min={forcastDataList[7]}
+          temp="C"
+        />
+        <SmallCard
+          dayTitle="Sun, 7 Jun"
+          img="Clear"
+          max={forcastDataList[8]}
+          min={forcastDataList[9]}
           temp="C"
         />
       </div>
