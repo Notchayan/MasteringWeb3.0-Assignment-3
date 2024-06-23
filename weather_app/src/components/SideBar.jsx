@@ -1,7 +1,7 @@
 import { useState } from "react";
 import SearchLocation from "./SearchLocation";
 
-const SideBar = () => {
+function SideBar({temprature}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -33,7 +33,7 @@ const SideBar = () => {
 
           <div className="flex flex-col items-center justify-between flex-grow pt-6">
             <h1 className="text-gray-150 text-[144px] font-medium">
-              15<span className="text-5xl text-gray-250">&deg;C</span>
+              {temprature}<span className="text-5xl text-gray-250">&deg;C</span>
             </h1>
             <h3 className="font-semibold text-4xl text-gray-250">Shower</h3>
             <div className="flex flex-col items-center text-center text-gray-350 text-lg space-y-5">
