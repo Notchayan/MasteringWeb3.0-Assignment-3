@@ -83,6 +83,7 @@ function App() {
     _forcast_data_list.push(forecastData?.timeline?.daily[i]?.values?.tempratureMax)
     _forcast_data_list.push(forecastData?.timeline?.daily[i]?.values?.tempratureMin)
   }
+  console.log(_forcast_data_list)
 
   return (
     <div className="bg-[#100E1D] flex flex-col lg:flex-row">
