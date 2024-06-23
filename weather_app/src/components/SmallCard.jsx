@@ -2,7 +2,7 @@ import React from "react";
 
 const SmallCard = ({ dayTitle, img, min, max, temp }) => {
   return (
-    <div className="bg-darkblue py-4 px-5 flex flex-col items-center space-y-4">
+    <div className="bg-darkblue rounded-lg py-4 px-5 flex flex-col items-center space-y-4">
       <p>{dayTitle}</p>
       <img src={`/images/${img}.png`} alt="weather-icon" className="max-h-16" />
       <div className="flex justify-between space-x-5">

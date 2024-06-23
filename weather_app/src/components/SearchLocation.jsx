@@ -12,7 +12,7 @@ const SearchLocation = ({ onClose }) => {
       <div className="flex justify-between my-5 space-x-4">
         <input
           type="text"
-          className="border border-gray-150 bg-transparent p-3 flex-grow"
+          className="border  border-gray-150 bg-transparent p-3 flex-grow"
           placeholder="search location"
         />
         <button className="bg-[#3C47E9] py-3 px-5 hover:bg-[#3C47E9]/70">

@@ -2,24 +2,19 @@ import { useState } from "react";
 import SearchLocation from "./SearchLocation";
 
 function SideBar({temprature}) {
-  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="flex flex-col min-h-screen bg-darkblue w-full lg:w-1/3 xl:w-1/4 p-7 lg:p-4 xl:p-7 space-y-10 overflow-x-hidden">
-      {isOpen ? (
-        <SearchLocation onClose={() => setIsOpen(false)} />
-      ) : (
         <>
-          <div className="flex justify-between mb-10">
-            <button
-              className="px-4 py-2 bg-[#6E707A] hover:bg-[#6E707A]/70 text-gray-150 shadow-lg"
-              onClick={() => setIsOpen(true)}
-            >
-              Search for places
-            </button>
-            <button className="px-4 py-2 bg-[#6E707A] hover:bg-[#6E707A]/70 text-gray-150 rounded-full shadow-lg">
-              <i className="fas fa-map-marker-alt"></i>
-            </button>
+          <div className="flex justify-between mb-10 space-x-4">
+          <input
+          type="text"
+          className="border rounded-lg border-gray-150 bg-transparent p-3 flex-grow"
+          placeholder="search location"
+        />
+        <button className="bg-[#3C47E9] rounded-lg py-3 px-5 hover:bg-[#3C47E9]/70">
+          Search
+        </button>
           </div>
 
           <div className="relative -mx-36 flex justify-center items-center max-h-40">
@@ -44,7 +39,6 @@ function SideBar({temprature}) {
             </div>
           </div>
         </>
-      )}
     </div>
   );
 };

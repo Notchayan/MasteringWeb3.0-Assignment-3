@@ -20,7 +20,7 @@ function App() {
         url: 'https://api.tomorrow.io/v4/weather/realtime',
         params: {
           location: `${location.latitude},${location.longitude}`,
-          apikey: 'wIdrs0CFzS3qjEl7zj7j8h2S2vsF9ZDO'
+          apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
         },
         headers: { accept: 'application/json' }
       };
@@ -47,7 +47,7 @@ function App() {
         url: `https://api.tomorrow.io/v4/weather/forecast`,
         params: {
           location: `${location.latitude},${location.longitude}`,
-          apikey: 'wIdrs0CFzS3qjEl7zj7j8h2S2vsF9ZDO'
+          apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
         },
         headers: { accept: 'application/json' }
       };
