@@ -20,7 +20,7 @@ function App() {
         url: 'https://api.tomorrow.io/v4/weather/realtime',
         params: {
           location: `${location.latitude},${location.longitude}`,
-          apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
+          apikey: 'wIdrs0CFzS3qjEl7zj7j8h2S2vsF9ZDO'
         },
         headers: { accept: 'application/json' }
       };
@@ -47,7 +47,7 @@ function App() {
         url: `https://api.tomorrow.io/v4/weather/forecast`,
         params: {
           location: `${location.latitude},${location.longitude}`,
-          apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
+          apikey: 'wIdrs0CFzS3qjEl7zj7j8h2S2vsF9ZDO'
         },
         headers: { accept: 'application/json' }
       };
@@ -80,8 +80,8 @@ function App() {
   // forcast data list
   const _forcast_data_list = []
   for (let i=0;i<=4;i++){
-    _forcast_data_list.push(forecastData?.timeline?.daily[i]?.values?.tempratureMax)
-    _forcast_data_list.push(forecastData?.timeline?.daily[i]?.values?.tempratureMin)
+    _forcast_data_list.push(forecastData?.timelines?.daily[i]?.values?.temperatureMax)
+    _forcast_data_list.push(forecastData?.timelines?.daily[i]?.values?.temperatureMin)
   }
   console.log(_forcast_data_list)
 
