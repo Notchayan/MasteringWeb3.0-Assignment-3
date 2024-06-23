@@ -7,7 +7,7 @@ function GetLocation({ onLocationFound }) { // onLocationFound prop used to pass
         // if successful 
         (position) => {
           const { latitude, longitude } = position.coords; // set lat,lon
-          onLocationFound({ latitude, longitude }); // pass it to the prop
+          onLocationFound(`${latitude},${longitude}`); // pass it to the prop
         },
         // if unsuccessful
         (error) => {

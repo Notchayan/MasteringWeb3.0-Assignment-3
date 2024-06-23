@@ -12,6 +12,10 @@ function App() {
   const [error, setError] = useState(null);// state to store error
   const [location, setLocation] = useState(null);// state to store location passed from GetLocation component
 
+  function handleSearchLocation(locationName){
+    setLocation(locationName)
+  }
+
   useEffect(() => {
     if (location) {
       // http request for api request
@@ -19,7 +23,7 @@ function App() {
         method: 'GET',
         url: 'https://api.tomorrow.io/v4/weather/realtime',
         params: {
-          location: `${location.latitude},${location.longitude}`,
+          location: location,
           apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
         },
         headers: { accept: 'application/json' }
@@ -46,7 +50,7 @@ function App() {
         method: 'GET',
         url: `https://api.tomorrow.io/v4/weather/forecast`,
         params: {
-          location: `${location.latitude},${location.longitude}`,
+          location: location,
           apikey: 't6iivnCtOCX1VnuNsLbfCSrIiHeMczcN'
         },
         headers: { accept: 'application/json' }
@@ -87,7 +91,7 @@ function App() {
 
   return (
     <div className="bg-[#100E1D] flex flex-col lg:flex-row">
-        <SideBar  temprature={_temprature}/>
+        <SideBar  temprature={_temprature} onSearchLocation={handleSearchLocation}/>
         <MainContent
         forcastDataList={_forcast_data_list}
         windSpeed={_wind_Speed} 
