@@ -15,7 +15,7 @@ function SideBar({ temprature, onSearchLocation }) {
         <div className="flex justify-between mb-10 space-x-4">
           <input
             type="text"
-            className="border rounded-lg border-gray-150 bg-transparent p-3 flex-grow"
+            className="border rounded-lg text-gray-100 border-gray-150 bg-transparent p-3 flex-grow"
             placeholder="search location"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}

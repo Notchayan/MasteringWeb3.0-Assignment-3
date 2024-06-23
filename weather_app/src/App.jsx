@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import defaultWeatherData from './default_weather.json';
+import defaultForcast from './default_forcast.json'
 import GetLocation from './GetLocation';
 import SideBar from './components/SideBar'
 import MainContent from './components/MainContent';
@@ -34,13 +35,11 @@ function App() {
       // if api request successful
         .then(function (response) {
           setWeatherData(response.data); // store json data to weatherdata state
-          setLoading(false); // loading should stop, hence state is set to false
         })
         // if api request unsuccessful 
         .catch(function (error) {
           setError(error); // set error
           setWeatherData(defaultWeatherData); // pass default weather data to weatherData state
-          setLoading(false); // loading stops
           window.alert('Error fetching weather data'); // show alert popup
         });
 
@@ -59,8 +58,12 @@ function App() {
       axios.request(forecastOptions)
         .then(function (response) {
           setForecastData(response.data);
+          setLoading(false); // loading stops
         })
         .catch(function (error) {
+          setError(error)
+          setForecastData(defaultForcast)
+          setLoading(false); // loading stops
           console.error('Error fetching forecast data', error);
         });
     }
