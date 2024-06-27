@@ -1,0 +1,53 @@
+
+.weather-card-wrapper{
+  margin-left: 180px;
+  margin-right: 130px;
+    display:flex;
+    justify-content: space-between; 
+    max-height: 300px;
+    /* overflow-y: scroll; */
+  }
+  
+.weather-card-wrapper .icon{
+    display: inline;
+    position: relative;
+    left: 35%;
+    }
+    
+    
+    .icon{
+      cursor:pointer;
+    }
+    
+    .icon:focus,
+    .icon:hover{
+      color:red;
+      outline:none;
+    }
+    
+.container-fluid{
+    width:38vw;
+    height: 80px;
+  }
+  .navbar-brand{
+    font-size: 60px;
+    position:relative;
+    right:-9px;
+  }
+  
+  .nav-user-img{
+    height:60px;
+    border-radius: 50%;
+    position:relative;
+    right:-1px;
+    top:-25px;
+  }
+  
+  .nav-item{
+    font-size: 15px;
+    color:black;
+    position: relative;
+    top:25px;
+    right: -95px;
+  }
+  

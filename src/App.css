@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding:20px;
+}
+
+.input{
+  position: absolute;
+  display: grid;
+  width: 150px;
+  top: 200px;
+}
+
+.Weather_Cards{
+  position: absolute;
+  display: grid;
+  top: 300px;
+}
+
+.logOut{
+  position: absolute;
+  bottom:5vh ;
+  left: 1vw ;
+}
+
+/* #mymap{
+  height: 30vh;
+  width: 40;
+} */
+
+#sticky_back {
+  width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-image: url('Images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
