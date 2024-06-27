@@ -1,0 +1,184 @@
+.red{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  background-color: rgb(116, 113, 255);
+  height: 9vh;
+  font-size: 1.7rem;
+  width: 8vw;
+}
+
+.navbar{
+  background-color: rgba(0, 0, 0, 0.776);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 9vh;
+  color: aliceblue;
+}
+
+.title{
+  padding-left:9vw ;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.navbar div {
+  padding-right: 9vw;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  height: 9vh;
+  align-items: center;
+}
+
+.homelink{
+  text-decoration: none;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  font-size: 1.7rem;
+  width: 8vw;
+}
+
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+  width: 8vw;
+}
+
+.usericon{
+  width: 40px;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home{
+  background-color: rgb(116, 113, 255);
+  margin: 2rem;
+  width: 60vw;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.642);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.search{
+  margin-top: 2rem;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  height: 3vh;
+  width: 24vw;
+  padding: 10px;
+}
+
+.btn{
+  width: 5vw;
+  height: 4vh;
+  font-size: 2.4vh;
+  margin: 1rem;
+}
+
+h2{
+  font-size: 2.5rem;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+}
+
+h3{
+  font-size: 2rem;
+  padding: 1vh;
+}
+
+h4{
+  padding: 1vh;
+  font-size: 1.5rem;
+}
+
+.weathericon{
+  width: 70px;
+  padding: 1vh;
+}
+
+.user{
+  width: 18vw;
+}
+
+.name{
+  width: 30vw;
+  font-size: 2vw;
+}
+
+.email{
+  width: 30vw;
+  font-size: 2vw;
+}
+
+.userdetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+  width: 40vw;
+  gap: 0.8vh;
+  border-radius: 15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.642);
+  background-color: rgb(116, 113, 255);
+  padding: 1.5vh;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logbtn{
+  width: 5vw;
+  height: 4vh;
+  font-size: 1.2vw;
+}
+
+.auth{
+  margin: 10vh;
+  font-size: 2rem;
+}
+
+.authwarn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.authlogin{
+  text-decoration: none;
+  background-color: rgb(116, 113, 255);
+  height: 5vh;
+  width: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 3vh;
+  border-radius:5px  ;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.642);
+}
