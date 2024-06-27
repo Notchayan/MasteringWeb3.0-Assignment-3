@@ -1,0 +1,79 @@
+/* style.css */
+
+.weather-dashboard {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffccff, #cc99ff, #ff99cc, #cc66ff, #ff66cc);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: #ffffff;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.weather-dashboard, .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.weather-container, .login, .logged-in {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather-container:hover, .login:hover, .logged-in:hover {
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #cc33ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #9900cc;
+}
+
+h2, h3, p {
+    margin: 10px 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.weather-data, .logged-in {
+    animation: fadeIn 1s;
+}
+
+.weather-data h3, .weather-data p {
+    color: #ffffff;
+}
