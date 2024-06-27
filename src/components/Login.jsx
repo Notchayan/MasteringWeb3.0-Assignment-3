@@ -3,6 +3,8 @@ import React from 'react'
 import userIcon from './userIcon.jpg'
 
 const Login = () => {
+
+    //setup of authentication method using Auth0
     const {user,loginWithRedirect,isAuthenticated,logout}=useAuth0();
   return (
     <div className='login'>

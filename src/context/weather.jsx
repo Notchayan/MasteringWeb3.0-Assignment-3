@@ -8,11 +8,13 @@ export const WeatherProvider = (props) => {
     const [data,setData]=useState(null);
     const [search,setSearch]=useState("");
 
+    //function to fetch from search bar
     const fetchData =async()=>{
         const response =await getWeatherData(search)
         setData(response);
     };
 
+    //function to fetch current location data
     const fetchCurrentLocation = async ()=>{
         await navigator.geolocation.getCurrentPosition((position)=>{
             getWeatherDataForLocation(
